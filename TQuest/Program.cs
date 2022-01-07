@@ -42,21 +42,16 @@ namespace TQuest
             Console.WriteLine(Localization.RU.room1_description);
             for (int i = 0; i < 50; i++) if (i == 25) Console.Write(Localization.RU.inventory); else Console.Write(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
             Console.WriteLine("");
-            string onefour = saves.GetString("main", "1-4");
-            string twosix = saves.GetString("main", "2-6");
-            string fourone = saves.GetString("main", "4-1");
-            string threethree = saves.GetString("main", "3-3");
-            string fivefour = saves.GetString("main", "5-4");
 
-            if (saves.GetString("main", "1-4") == "1") Console.WriteLine("Записка: 1=4");
+            if (saves.GetString("main", "1-4") == "1") Console.WriteLine(Localization.RU.notice14);
 
-            if (saves.GetString("main", "2-6") == "1") Console.WriteLine("Записка: 2=6");
+            if (saves.GetString("main", "2-4") == "1") Console.WriteLine(Localization.RU.notice24);
 
-            if (saves.GetString("main", "4-1") == "1") Console.WriteLine("Записка: 4-1");
+            if (saves.GetString("main", "4-1") == "1") Console.WriteLine(Localization.RU.notice41);
 
-            if (saves.GetString("main", "3-3") == "1") Console.WriteLine("Записка: 3-3");
+            if (saves.GetString("main", "3-3") == "1") Console.WriteLine(Localization.RU.notice33);
 
-            if (saves.GetString("main", "5-4") == "1") Console.WriteLine("Записка: 5-4");
+            if (saves.GetString("main", "5-4") == "1") Console.WriteLine(Localization.RU.notice54);
 
             for (int i = 0; i < 50; i++) if (i == 25) Console.Write(Localization.RU.variants); else Console.Write(Global.textv); // Вывод отделения между инвентарём и вариантами
             Console.WriteLine("");
@@ -67,14 +62,14 @@ namespace TQuest
             Console.WriteLine("5)" + Localization.RU.room1_action5);
             Console.WriteLine("6)" + Localization.RU.room1_action6);
             Console.WriteLine("7)" + Localization.RU.room1_action7);
-            Console.WriteLine("Введите нужное действие");
+            Console.WriteLine(Localization.RU.typeneedaction);
             string result = Console.ReadLine();
             if (result != null)
             {
                 if (result == "1)" || result == "1")
                 {
                     Console.Clear();
-                    Console.WriteLine("[Тумбочка с телефоном] Вы ничего не нашли");
+                    Console.WriteLine(Localization.RU.nothingfind);
                     RoomOne_1();
                 }
 
@@ -83,11 +78,11 @@ namespace TQuest
                     if (saves.GetString("main", "1-4") == "1")
                     {
                         Console.Clear();
-                        Console.WriteLine("[Коврик] Вы уже осмотрели это место");
+                        Console.WriteLine(Localization.RU.room1_notice14_finded);
                         RoomOne_1();
                     }
                     Console.Clear();
-                    Console.WriteLine("[Коврик] Вы нашли записку 1=4");
+                    Console.WriteLine(Localization.RU.room1_notice14_find);
                     saves.WriteString("main", "1-4", "1");
                     RoomOne_1();
                 }
@@ -100,7 +95,7 @@ namespace TQuest
                         for (int i = 0; i < 50; i++) if (i == 25) Console.Write(Localization.RU.gameover); else Console.Write(Global.textv);
                         Console.WriteLine(Localization.RU.gameovertext);
                     }
-                    else Console.WriteLine(Localization.RU.needkey);
+                    else Console.Clear(); Console.WriteLine(Localization.RU.needkey); RoomOne_1();
                 }
 
                 else if (result == "4)" || result == "4")
@@ -123,14 +118,82 @@ namespace TQuest
                     RoomFive_5();
                 }
 
-                else Console.WriteLine("Выберите корректный вариант"); RoomOne_1();
+                else Console.WriteLine(Localization.RU.choosecorrectvariant); RoomOne_1();
             }
-            else Console.WriteLine("Выберите корректный вариант"); RoomOne_1();
+            else Console.WriteLine(Localization.RU.choosecorrectvariant); RoomOne_1();
         }
 
         static void RoomTwo_2() // Кухня
         {
+            Console.Clear();
+            for (int i = 0; i < 50; i++) if (i == 25) Console.Write(Global.title); else Console.Write(Global.textv); // Вывод самой верхней строки
+            Console.WriteLine("");
+            Console.WriteLine(Localization.RU.room2_description);
+            for (int i = 0; i < 50; i++) if (i == 25) Console.Write(Localization.RU.inventory); else Console.Write(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
+            Console.WriteLine("");
 
+            if (saves.GetString("main", "1-4") == "1") Console.WriteLine(Localization.RU.notice14);
+
+            if (saves.GetString("main", "2-4") == "1") Console.WriteLine(Localization.RU.notice24);
+
+            if (saves.GetString("main", "4-1") == "1") Console.WriteLine(Localization.RU.notice41);
+
+            if (saves.GetString("main", "3-3") == "1") Console.WriteLine(Localization.RU.notice33);
+
+            if (saves.GetString("main", "5-4") == "1") Console.WriteLine(Localization.RU.notice54);
+
+            for (int i = 0; i < 50; i++) if (i == 25) Console.Write(Localization.RU.variants); else Console.Write(Global.textv); // Вывод отделения между инвентарём и вариантами
+            Console.WriteLine("");
+            Console.WriteLine("1)" + Localization.RU.room2_action1);
+            Console.WriteLine("2)" + Localization.RU.room2_action2);
+            Console.WriteLine("3)" + Localization.RU.room2_action3);
+            Console.WriteLine("4)" + Localization.RU.room2_action4);
+            Console.WriteLine("5)" + Localization.RU.room2_action5);
+            Console.WriteLine(Localization.RU.typeneedaction);
+            string result = Console.ReadLine();
+            if (result != null)
+            {
+                if (result == "1" || result == "1)")
+                {
+                    Console.Clear();
+                    Console.WriteLine(Localization.RU.nothingfind);
+                    RoomTwo_2();
+                }
+
+                else if (result == "2" || result == "2)")
+                {
+                    if (saves.GetString("main", "2-4") == "1")
+                    {
+                        Console.Clear();
+                        Console.WriteLine(Localization.RU.room2_notice24_finded);
+                        RoomOne_1();
+                    }
+                    Console.Clear();
+                    Console.WriteLine(Localization.RU.room2_notice24_find);
+                    saves.WriteString("main", "2-4", "1");
+                    RoomOne_1();
+                }
+
+                else if (result == "3" || result == "3)")
+                {
+                    Console.Clear();
+                    Console.WriteLine(Localization.RU.nothingfind);
+                    RoomTwo_2();
+                }
+
+                else if (result == "4" || result == "4)")
+                {
+                    RoomOne_1();
+                }
+
+                else if (result == "5" || result == "5)")
+                {
+                    RoomSeven_7();
+                }
+
+                else Console.WriteLine(Localization.RU.choosecorrectvariant); RoomTwo_2();
+            }
+            else Console.WriteLine(Localization.RU.choosecorrectvariant); RoomTwo_2();
         }
 
         static void RoomThree_3() // Кабинет
@@ -149,6 +212,11 @@ namespace TQuest
         }
 
         static void RoomSix_6() // Крыша
+        {
+
+        }
+
+        static void RoomSeven_7() // Подвал
         {
 
         }
