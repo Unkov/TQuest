@@ -78,7 +78,7 @@ namespace TQuest
                     RoomOne_1();
                 }
 
-                if (result == "2)" || result == "2")
+                else if (result == "2)" || result == "2")
                 {
                     if (saves.GetString("main", "1-4") == "1")
                     {
@@ -92,8 +92,8 @@ namespace TQuest
                     RoomOne_1();
                 }
 
-               if (result == "3)" || result == "3")
-               {
+                else if (result == "3)" || result == "3")
+                {
                     if (saves.GetString("main", "key") == "1")
                     {
                         Console.Clear();
@@ -101,28 +101,31 @@ namespace TQuest
                         Console.WriteLine(Localization.RU.gameovertext);
                     }
                     else Console.WriteLine(Localization.RU.needkey);
-               }
+                }
 
-                if (result == "4)" || result == "4")
+                else if (result == "4)" || result == "4")
                 {
                     RoomTwo_2();
                 }
 
-                if (result == "5)" || result == "5")
+                else if (result == "5)" || result == "5")
                 {
                     RoomThree_3();
                 }
 
-                if (result == "6)" || result == "6")
+                else if (result == "6)" || result == "6")
                 {
                     RoomFour_4();
                 }
 
-                if (result == "7)" || result == "7")
+                else if (result == "7)" || result == "7")
                 {
                     RoomFive_5();
                 }
+
+                else Console.WriteLine("Выберите корректный вариант"); RoomOne_1();
             }
+            else Console.WriteLine("Выберите корректный вариант"); RoomOne_1();
         }
 
         static void RoomTwo_2() // Кухня
