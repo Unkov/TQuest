@@ -10,4 +10,10 @@
     <PackageReference Include="INIManager" Version="1.0.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Reference Include="TQuestLib">
+      <HintPath>bin\Release\net5.0\TQuestLib.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+
 </Project>
