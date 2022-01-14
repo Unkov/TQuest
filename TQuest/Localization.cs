@@ -81,6 +81,8 @@ namespace TQuest
             public static string room13_action1 = "осмотреть: шкатулка";
             public static string room13_action2 = "осмотреть: старый череп";
             public static string room13_action3 = "идти: развилка";
+            public static string room13_notice54_find = "[Шкатулка] Вы нашли записку 5=4";
+            public static string room13_notice54_finded = "[Шкатулка] Вы уже осмотрели это место";
             public static string gameover = "[ Конец! ]";
             public static string gameovertext = $"Вот и все, Вы прошли столь долгий, и, возможно, опасный путь. Спасибо, что прошли эту игру! Но это еще не все, когда-нибудь выйдет TQuest 2! {Environment.NewLine} Огромное спасибо MineCR за идею, сценарий и код на Lua.";
             public static string needkey = "Вам требуется ключ!";
