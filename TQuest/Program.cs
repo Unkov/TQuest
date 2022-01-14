@@ -74,7 +74,7 @@ namespace TQuest
             RoomOne_1();
         }
 
-        static void RoomOne_1() // Лобби
+        static void RoomOne_1() // Коридор
         {
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Global.title); else Core.print(Global.textv); // Вывод самой верхней строки
             Core.printl("");
@@ -88,7 +88,7 @@ namespace TQuest
 
             if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
 
-            if (saves.GetString("main", "3-3") == "1") Core.printl(Localization.RU.notice33);
+            if (saves.GetString("main", "3-3") == "1") Core.printl(Localization.RU.notice34);
 
             if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
 
@@ -177,7 +177,7 @@ namespace TQuest
 
             if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
 
-            if (saves.GetString("main", "3-3") == "1") Core.printl(Localization.RU.notice33);
+            if (saves.GetString("main", "3-3") == "1") Core.printl(Localization.RU.notice34);
 
             if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
 
@@ -250,7 +250,7 @@ namespace TQuest
 
             if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
 
-            if (saves.GetString("main", "3-3") == "1") Core.printl(Localization.RU.notice33);
+            if (saves.GetString("main", "3-3") == "1") Core.printl(Localization.RU.notice34);
 
             if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
 
@@ -289,7 +289,6 @@ namespace TQuest
                     string[] passwords = { "06fada21d8639163167030f081af858e0b567dbb2eaec565b2f6ba50fd17ed1d", "6e5d967631bbc0c7d36eefbe398a75323cdd18b2a6e180b95b42add033524cac", "7400bc38db9838278e42498a258f124a1aa2ddaa844bf0a4ba478a709f98c0d1", "61304c99d645456f73c0126dfc69c6de249d52b816078bf2ec66ea0a1322e1aa", "eab5cab790f3bfbb6a5169c6f776aa7ae10637fbd2b61fcc1cc58a501c018728" };
                     int number = new Random().Next(1, 5);
                     Console.Clear();
-                    Core.printl(Localization.RU.room3_password);
                     Core.printl(passwords[number]);
                     string password = Console.ReadLine();
                     if (password != null)
@@ -321,12 +320,134 @@ namespace TQuest
 
         static void RoomFour_4() // Спальня
         {
-            
+            Console.Clear();
+            for (int i = 0; i < 50; i++) if (i == 25) Core.print(Global.title); else Core.print(Global.textv); // Вывод самой верхней строки
+            Core.printl("");
+            Core.printl(Localization.RU.room4_description);
+            for (int i = 0; i < 50; i++) if (i == 25) Core.print(Localization.RU.inventory); else Core.print(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
+            Core.printl("");
+
+            if (saves.GetString("main", "1-4") == "1") Core.printl(Localization.RU.notice14);
+
+            if (saves.GetString("main", "2-4") == "1") Core.printl(Localization.RU.notice24);
+
+            if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
+
+            if (saves.GetString("main", "3-4") == "1") Core.printl(Localization.RU.notice34);
+
+            if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
+
+            for (int i = 0; i < 50; i++) if (i == 25) Core.print(Localization.RU.variants); else Core.print(Global.textv); // Вывод отделения между инвентарём и вариантами
+            Core.printl("");
+            Core.printl("1)" + Localization.RU.room4_action1);
+            Core.printl("2)" + Localization.RU.room4_action2);
+            Core.printl("3)" + Localization.RU.room4_action3);
+            Core.printl("4)" + Localization.RU.room4_action4);
+            Core.printl(Localization.RU.typeneedaction);
+            string result = Console.ReadLine();
+
+            if (result != null)
+            {
+                if (result == "1)" || result == "1")
+                {
+                    Console.Clear();
+                    Core.printl(Localization.RU.nothingfind);
+                    RoomFour_4();
+                }
+
+                else if (result == "2)" || result == "2")
+                {
+                    Console.Clear();
+                    Core.printl(Localization.RU.nothingfind);
+                    RoomFour_4();
+                }
+
+                else if (result == "3)" || result == "3")
+                {
+                    Console.Clear();
+                    Core.printl(Localization.RU.nothingfind);
+                    RoomFour_4();
+                }
+
+                else if (result == "4)" || result == "4")
+                {
+                    Console.Clear();
+                    RoomOne_1();
+                }
+
+                else Core.printl(Localization.RU.choosecorrectvariant); RoomFour_4();
+            }
+            else Core.printl(Localization.RU.choosecorrectvariant); RoomFour_4();
         }
 
         static void RoomFive_5() // Чердак
         {
+            Console.Clear();
+            for (int i = 0; i < 50; i++) if (i == 25) Core.print(Global.title); else Core.print(Global.textv); // Вывод самой верхней строки
+            Core.printl("");
+            Core.printl(Localization.RU.room5_description);
+            for (int i = 0; i < 50; i++) if (i == 25) Core.print(Localization.RU.inventory); else Core.print(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
+            Core.printl("");
 
+            if (saves.GetString("main", "1-4") == "1") Core.printl(Localization.RU.notice14);
+
+            if (saves.GetString("main", "2-4") == "1") Core.printl(Localization.RU.notice24);
+
+            if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
+
+            if (saves.GetString("main", "3-3") == "1") Core.printl(Localization.RU.notice34);
+
+            if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
+
+            for (int i = 0; i < 50; i++) if (i == 25) Core.print(Localization.RU.variants); else Core.print(Global.textv); // Вывод отделения между инвентарём и вариантами
+            Core.printl("");
+            Core.printl("1)" + Localization.RU.room5_action1);
+            Core.printl("2)" + Localization.RU.room5_action2);
+            Core.printl("3)" + Localization.RU.room5_action3);
+            Core.printl("4)" + Localization.RU.room5_action4);
+            Core.printl("5)" + Localization.RU.room5_action5);
+            Core.printl(Localization.RU.typeneedaction);
+            string result = Console.ReadLine();
+
+            if (result != null)
+            {
+                if (result == "1)" || result == "1")
+                {
+                    Console.Clear();
+                    Core.printl(Localization.RU.nothingfind);
+                    RoomFive_5();
+                }
+
+                else if (result == "2)" || result == "2")
+                {
+                    Console.Clear();
+                    Core.printl(Localization.RU.nothingfind);
+                    RoomFive_5();
+                }
+
+                else if (result == "3)" || result == "3")
+                {
+                    if (saves.GetString("main", "3-4") == "1")
+                    {
+                        Core.printl(Localization.RU.room5_notice34_finded);
+                        RoomFive_5();
+                    }
+                    Core.printl(Localization.RU.room5_notice34_find);
+                    saves.WriteString("main", "3-4", "1");
+                    RoomFive_5();
+                }
+
+                else if (result == "4)" || result == "4")
+                {
+                    Console.Clear();
+                    RoomOne_1();
+                }
+
+                else if (result == "5)" || result == "5")
+                {
+                    RoomSix_6();
+                }
+            }
         }
 
         static void RoomSix_6() // Крыша
@@ -335,6 +456,21 @@ namespace TQuest
         }
 
         static void RoomSeven_7() // Подвал
+        {
+
+        }
+
+        static void RoomEight_8() // Разлом
+        {
+
+        }
+
+        static void RoomNine_9() // Развилка
+        {
+
+        }
+
+        static void RoomTen_10() // Спуск вниз
         {
 
         }
