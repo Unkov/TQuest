@@ -724,7 +724,7 @@ namespace TQuest
             if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
 
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Localization.RU.variants); else Core.print(Global.textv); // Вывод отделения между инвентарём и вариантами
-            Core.printl(""); 
+            Core.printl("");
             Core.printl("1)" + Localization.RU.room5_action1);
             Core.printl("2)" + Localization.RU.room5_action2);
             Core.printl("3)" + Localization.RU.room5_action3);
