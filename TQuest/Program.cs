@@ -532,9 +532,9 @@ namespace TQuest
                     RoomEight_8();
                 }
 
-                else Core.printl(Localization.RU.choosecorrectvariant); RoomSix_6();
+                else Core.printl(Localization.RU.choosecorrectvariant); RoomSeven_7();
             }
-            else Core.printl(Localization.RU.choosecorrectvariant); RoomSix_6();
+            else Core.printl(Localization.RU.choosecorrectvariant); RoomSeven_7();
         }
 
         static void RoomEight_8() // Разлом
@@ -542,7 +542,7 @@ namespace TQuest
             Console.Clear();
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Global.title); else Core.print(Global.textv); // Вывод самой верхней строки
             Core.printl("");
-            Core.printl(Localization.RU.room5_description);
+            Core.printl(Localization.RU.room8_description);
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Localization.RU.inventory); else Core.print(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
             Core.printl("");
 
@@ -554,35 +554,26 @@ namespace TQuest
 
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Localization.RU.variants); else Core.print(Global.textv); // Вывод отделения между инвентарём и вариантами
             Core.printl("");
-            Core.printl("1)" + Localization.RU.room5_action1);
-            Core.printl("2)" + Localization.RU.room5_action2);
-            Core.printl("3)" + Localization.RU.room5_action3);
-            Core.printl("4)" + Localization.RU.room5_action4);
-            Core.printl("5)" + Localization.RU.room5_action5);
+            Core.printl("1)" + Localization.RU.room8_action1);
+            Core.printl("2)" + Localization.RU.room8_action2);
             Core.printl(Localization.RU.typeneedaction);
             string result = Console.ReadLine();
 
             if (result != null)
             {
-                if (result == "" || result == "")
+                if (result == "1)" || result == "1")
                 {
-
+                    RoomSeven_7();
                 }
 
-                else if (result == "" || result == "")
+                else if (result == "2)" || result == "2")
                 {
-
+                    RoomNine_9();
                 }
 
-
-                else if (result == "" || result == "")
-                {
-
-                }
-
-                else Core.printl(Localization.RU.choosecorrectvariant); RoomSix_6();
+                else Core.printl(Localization.RU.choosecorrectvariant); RoomEight_8();
             }
-            else Core.printl(Localization.RU.choosecorrectvariant); RoomSix_6();
+            else Core.printl(Localization.RU.choosecorrectvariant); RoomEight_8();
         }
 
         static void RoomNine_9() // Развилка
@@ -590,7 +581,7 @@ namespace TQuest
             Console.Clear();
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Global.title); else Core.print(Global.textv); // Вывод самой верхней строки
             Core.printl("");
-            Core.printl(Localization.RU.room5_description);
+            Core.printl(Localization.RU.room9_description);
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Localization.RU.inventory); else Core.print(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
             Core.printl("");
 
@@ -602,38 +593,74 @@ namespace TQuest
 
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Localization.RU.variants); else Core.print(Global.textv); // Вывод отделения между инвентарём и вариантами
             Core.printl("");
-            Core.printl("1)" + Localization.RU.room5_action1);
-            Core.printl("2)" + Localization.RU.room5_action2);
-            Core.printl("3)" + Localization.RU.room5_action3);
-            Core.printl("4)" + Localization.RU.room5_action4);
-            Core.printl("5)" + Localization.RU.room5_action5);
+            Core.printl("1)" + Localization.RU.room9_action1);
+            Core.printl("2)" + Localization.RU.room9_action2);
+            Core.printl("3)" + Localization.RU.room9_action3);
             Core.printl(Localization.RU.typeneedaction);
             string result = Console.ReadLine();
 
             if (result != null)
             {
-                if (result == "" || result == "")
+                if (result == "1)" || result == "1")
                 {
-
+                    RoomEight_8();
                 }
 
-                else if (result == "" || result == "")
+                else if (result == "2)" || result == "2")
                 {
-
+                    RoomTen_10();
                 }
 
-
-                else if (result == "" || result == "")
+                else if (result == "3)" || result == "3")
                 {
-
+                    RoomEleven_11();
                 }
 
-                else Core.printl(Localization.RU.choosecorrectvariant); RoomSix_6();
+                else Core.printl(Localization.RU.choosecorrectvariant); RoomNine_9();
             }
-            else Core.printl(Localization.RU.choosecorrectvariant); RoomSix_6();
+            else Core.printl(Localization.RU.choosecorrectvariant); RoomNine_9();
         }
 
         static void RoomTen_10() // Спуск вниз
+        {
+            Console.Clear();
+            for (int i = 0; i < 50; i++) if (i == 25) Core.print(Global.title); else Core.print(Global.textv); // Вывод самой верхней строки
+            Core.printl("");
+            Core.printl(Localization.RU.room10_description);
+            for (int i = 0; i < 50; i++) if (i == 25) Core.print(Localization.RU.inventory); else Core.print(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
+            Core.printl("");
+
+            if (saves.GetString("main", "1-4") == "1") Core.printl(Localization.RU.notice14);
+            if (saves.GetString("main", "2-4") == "1") Core.printl(Localization.RU.notice24);
+            if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
+            if (saves.GetString("main", "3-4") == "1") Core.printl(Localization.RU.notice34);
+            if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
+
+            for (int i = 0; i < 50; i++) if (i == 25) Core.print(Localization.RU.variants); else Core.print(Global.textv); // Вывод отделения между инвентарём и вариантами
+            Core.printl("");
+            Core.printl("1)" + Localization.RU.room10_action1);
+            Core.printl("2)" + Localization.RU.room10_action2);
+            Core.printl(Localization.RU.typeneedaction);
+            string result = Console.ReadLine();
+
+            if (result != null)
+            {
+                if (result == "1)" || result == "1")
+                {
+                    RoomNine_9();
+                }
+
+                else if (result == "2)" || result == "2")
+                {
+                    RoomTwelve_12();
+                }
+
+                else Core.printl(Localization.RU.choosecorrectvariant); RoomTen_10();
+            }
+            else Core.printl(Localization.RU.choosecorrectvariant); RoomTen_10();
+        }
+
+        static void RoomEleven_11() // Пещера
         {
             Console.Clear();
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Global.title); else Core.print(Global.textv); // Вывод самой верхней строки
@@ -681,6 +708,53 @@ namespace TQuest
             else Core.printl(Localization.RU.choosecorrectvariant); RoomSix_6();
         }
 
+        static void RoomTwelve_12() // Грот
+        {
+            Console.Clear();
+            for (int i = 0; i < 50; i++) if (i == 25) Core.print(Global.title); else Core.print(Global.textv); // Вывод самой верхней строки
+            Core.printl("");
+            Core.printl(Localization.RU.room5_description);
+            for (int i = 0; i < 50; i++) if (i == 25) Core.print(Localization.RU.inventory); else Core.print(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
+            Core.printl("");
+
+            if (saves.GetString("main", "1-4") == "1") Core.printl(Localization.RU.notice14);
+            if (saves.GetString("main", "2-4") == "1") Core.printl(Localization.RU.notice24);
+            if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
+            if (saves.GetString("main", "3-4") == "1") Core.printl(Localization.RU.notice34);
+            if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
+
+            for (int i = 0; i < 50; i++) if (i == 25) Core.print(Localization.RU.variants); else Core.print(Global.textv); // Вывод отделения между инвентарём и вариантами
+            Core.printl("");
+            Core.printl("1)" + Localization.RU.room5_action1);
+            Core.printl("2)" + Localization.RU.room5_action2);
+            Core.printl("3)" + Localization.RU.room5_action3);
+            Core.printl("4)" + Localization.RU.room5_action4);
+            Core.printl("5)" + Localization.RU.room5_action5);
+            Core.printl(Localization.RU.typeneedaction);
+            string result = Console.ReadLine();
+
+            if (result != null)
+            {
+                if (result == "" || result == "")
+                {
+
+                }
+
+                else if (result == "" || result == "")
+                {
+
+                }
+
+
+                else if (result == "" || result == "")
+                {
+
+                }
+
+                else Core.printl(Localization.RU.choosecorrectvariant); RoomSix_6();
+            }
+            else Core.printl(Localization.RU.choosecorrectvariant); RoomSix_6();
+        }
         private static void MissionImpossible()
         {
             Console.Beep(784, 150);
