@@ -82,10 +82,14 @@ namespace TQuest
             Core.printl("");
 
             if (saves.GetString("main", "1-4") == "1") Core.printl(Localization.RU.notice14);
-            else if (saves.GetString("main", "2-4") == "1") Core.printl(Localization.RU.notice24);
-            else if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
-            else if (saves.GetString("main", "3-4") == "1") Core.printl(Localization.RU.notice34);
-            else if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
+            if (saves.GetString("main", "2-4") == "1") Core.printl(Localization.RU.notice24);
+            if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
+            if (saves.GetString("main", "3-4") == "1") Core.printl(Localization.RU.notice34);
+            if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
+            if (saves.GetString("main", "1-4") == "1" || saves.GetString("main", "2-4") == "1" || saves.GetString("main", "4-1") == "1" || saves.GetString("main", "3-4") == "1" || saves.GetString("main", "5-4") == "1")
+            {
+
+            }
             else Core.printl(Localization.RU.inventorynone);
 
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Localization.RU.variants); else Core.print(Global.textv); // Вывод отделения между инвентарём и вариантами
@@ -167,10 +171,14 @@ namespace TQuest
             Core.printl("");
 
             if (saves.GetString("main", "1-4") == "1") Core.printl(Localization.RU.notice14);
-            else if (saves.GetString("main", "2-4") == "1") Core.printl(Localization.RU.notice24);
-            else if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
-            else if (saves.GetString("main", "3-4") == "1") Core.printl(Localization.RU.notice34);
-            else if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
+            if (saves.GetString("main", "2-4") == "1") Core.printl(Localization.RU.notice24);
+            if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
+            if (saves.GetString("main", "3-4") == "1") Core.printl(Localization.RU.notice34);
+            if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
+            if (saves.GetString("main", "1-4") == "1" || saves.GetString("main", "2-4") == "1" || saves.GetString("main", "4-1") == "1" || saves.GetString("main", "3-4") == "1" || saves.GetString("main", "5-4") == "1")
+            {
+
+            }
             else Core.printl(Localization.RU.inventorynone);
 
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Localization.RU.variants); else Core.print(Global.textv); // Вывод отделения между инвентарём и вариантами
@@ -235,10 +243,14 @@ namespace TQuest
             Core.printl("");
 
             if (saves.GetString("main", "1-4") == "1") Core.printl(Localization.RU.notice14);
-            else if (saves.GetString("main", "2-4") == "1") Core.printl(Localization.RU.notice24);
-            else if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
-            else if (saves.GetString("main", "3-4") == "1") Core.printl(Localization.RU.notice34);
-            else if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
+            if (saves.GetString("main", "2-4") == "1") Core.printl(Localization.RU.notice24);
+            if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
+            if (saves.GetString("main", "3-4") == "1") Core.printl(Localization.RU.notice34);
+            if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
+            if (saves.GetString("main", "1-4") == "1" || saves.GetString("main", "2-4") == "1" || saves.GetString("main", "4-1") == "1" || saves.GetString("main", "3-4") == "1" || saves.GetString("main", "5-4") == "1")
+            {
+
+            }
             else Core.printl(Localization.RU.inventorynone);
 
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Localization.RU.variants); else Core.print(Global.textv); // Вывод отделения между инвентарём и вариантами
@@ -313,10 +325,14 @@ namespace TQuest
             Core.printl("");
 
             if (saves.GetString("main", "1-4") == "1") Core.printl(Localization.RU.notice14);
-            else if (saves.GetString("main", "2-4") == "1") Core.printl(Localization.RU.notice24);
-            else if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
-            else if (saves.GetString("main", "3-4") == "1") Core.printl(Localization.RU.notice34);
-            else if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
+            if (saves.GetString("main", "2-4") == "1") Core.printl(Localization.RU.notice24);
+            if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
+            if (saves.GetString("main", "3-4") == "1") Core.printl(Localization.RU.notice34);
+            if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
+            if (saves.GetString("main", "1-4") == "1" || saves.GetString("main", "2-4") == "1" || saves.GetString("main", "4-1") == "1" || saves.GetString("main", "3-4") == "1" || saves.GetString("main", "5-4") == "1")
+            {
+
+            }
             else Core.printl(Localization.RU.inventorynone);
 
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Localization.RU.variants); else Core.print(Global.textv); // Вывод отделения между инвентарём и вариантами
@@ -368,10 +384,14 @@ namespace TQuest
             Core.printl("");
 
             if (saves.GetString("main", "1-4") == "1") Core.printl(Localization.RU.notice14);
-            else if (saves.GetString("main", "2-4") == "1") Core.printl(Localization.RU.notice24);
-            else if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
-            else if (saves.GetString("main", "3-4") == "1") Core.printl(Localization.RU.notice34);
-            else if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
+            if (saves.GetString("main", "2-4") == "1") Core.printl(Localization.RU.notice24);
+            if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
+            if (saves.GetString("main", "3-4") == "1") Core.printl(Localization.RU.notice34);
+            if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
+            if (saves.GetString("main", "1-4") == "1" || saves.GetString("main", "2-4") == "1" || saves.GetString("main", "4-1") == "1" || saves.GetString("main", "3-4") == "1" || saves.GetString("main", "5-4") == "1")
+            {
+
+            }
             else Core.printl(Localization.RU.inventorynone);
 
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Localization.RU.variants); else Core.print(Global.textv); // Вывод отделения между инвентарём и вариантами
@@ -434,10 +454,14 @@ namespace TQuest
             Core.printl("");
 
             if (saves.GetString("main", "1-4") == "1") Core.printl(Localization.RU.notice14);
-            else if (saves.GetString("main", "2-4") == "1") Core.printl(Localization.RU.notice24);
-            else if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
-            else if (saves.GetString("main", "3-4") == "1") Core.printl(Localization.RU.notice34);
-            else if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
+            if (saves.GetString("main", "2-4") == "1") Core.printl(Localization.RU.notice24);
+            if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
+            if (saves.GetString("main", "3-4") == "1") Core.printl(Localization.RU.notice34);
+            if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
+            if (saves.GetString("main", "1-4") == "1" || saves.GetString("main", "2-4") == "1" || saves.GetString("main", "4-1") == "1" || saves.GetString("main", "3-4") == "1" || saves.GetString("main", "5-4") == "1")
+            {
+
+            }
             else Core.printl(Localization.RU.inventorynone);
 
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Localization.RU.variants); else Core.print(Global.textv); // Вывод отделения между инвентарём и вариантами
@@ -484,10 +508,14 @@ namespace TQuest
             Core.printl("");
 
             if (saves.GetString("main", "1-4") == "1") Core.printl(Localization.RU.notice14);
-            else if (saves.GetString("main", "2-4") == "1") Core.printl(Localization.RU.notice24);
-            else if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
-            else if (saves.GetString("main", "3-4") == "1") Core.printl(Localization.RU.notice34);
-            else if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
+            if (saves.GetString("main", "2-4") == "1") Core.printl(Localization.RU.notice24);
+            if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
+            if (saves.GetString("main", "3-4") == "1") Core.printl(Localization.RU.notice34);
+            if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
+            if (saves.GetString("main", "1-4") == "1" || saves.GetString("main", "2-4") == "1" || saves.GetString("main", "4-1") == "1" || saves.GetString("main", "3-4") == "1" || saves.GetString("main", "5-4") == "1")
+            {
+
+            }
             else Core.printl(Localization.RU.inventorynone);
 
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Localization.RU.variants); else Core.print(Global.textv); // Вывод отделения между инвентарём и вариантами
@@ -539,10 +567,14 @@ namespace TQuest
             Core.printl("");
 
             if (saves.GetString("main", "1-4") == "1") Core.printl(Localization.RU.notice14);
-            else if (saves.GetString("main", "2-4") == "1") Core.printl(Localization.RU.notice24);
-            else if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
-            else if (saves.GetString("main", "3-4") == "1") Core.printl(Localization.RU.notice34);
-            else if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
+            if (saves.GetString("main", "2-4") == "1") Core.printl(Localization.RU.notice24);
+            if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
+            if (saves.GetString("main", "3-4") == "1") Core.printl(Localization.RU.notice34);
+            if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
+            if (saves.GetString("main", "1-4") == "1" || saves.GetString("main", "2-4") == "1" || saves.GetString("main", "4-1") == "1" || saves.GetString("main", "3-4") == "1" || saves.GetString("main", "5-4") == "1")
+            {
+
+            }
             else Core.printl(Localization.RU.inventorynone);
 
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Localization.RU.variants); else Core.print(Global.textv); // Вывод отделения между инвентарём и вариантами
@@ -580,10 +612,14 @@ namespace TQuest
             Core.printl("");
 
             if (saves.GetString("main", "1-4") == "1") Core.printl(Localization.RU.notice14);
-            else if (saves.GetString("main", "2-4") == "1") Core.printl(Localization.RU.notice24);
-            else if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
-            else if (saves.GetString("main", "3-4") == "1") Core.printl(Localization.RU.notice34);
-            else if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
+            if (saves.GetString("main", "2-4") == "1") Core.printl(Localization.RU.notice24);
+            if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
+            if (saves.GetString("main", "3-4") == "1") Core.printl(Localization.RU.notice34);
+            if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
+            if (saves.GetString("main", "1-4") == "1" || saves.GetString("main", "2-4") == "1" || saves.GetString("main", "4-1") == "1" || saves.GetString("main", "3-4") == "1" || saves.GetString("main", "5-4") == "1")
+            {
+
+            }
             else Core.printl(Localization.RU.inventorynone);
 
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Localization.RU.variants); else Core.print(Global.textv); // Вывод отделения между инвентарём и вариантами
@@ -627,10 +663,14 @@ namespace TQuest
             Core.printl("");
 
             if (saves.GetString("main", "1-4") == "1") Core.printl(Localization.RU.notice14);
-            else if (saves.GetString("main", "2-4") == "1") Core.printl(Localization.RU.notice24);
-            else if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
-            else if (saves.GetString("main", "3-4") == "1") Core.printl(Localization.RU.notice34);
-            else if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
+            if (saves.GetString("main", "2-4") == "1") Core.printl(Localization.RU.notice24);
+            if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
+            if (saves.GetString("main", "3-4") == "1") Core.printl(Localization.RU.notice34);
+            if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
+            if (saves.GetString("main", "1-4") == "1" || saves.GetString("main", "2-4") == "1" || saves.GetString("main", "4-1") == "1" || saves.GetString("main", "3-4") == "1" || saves.GetString("main", "5-4") == "1")
+            {
+
+            }
             else Core.printl(Localization.RU.inventorynone);
 
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Localization.RU.variants); else Core.print(Global.textv); // Вывод отделения между инвентарём и вариантами
@@ -668,10 +708,14 @@ namespace TQuest
             Core.printl("");
 
             if (saves.GetString("main", "1-4") == "1") Core.printl(Localization.RU.notice14);
-            else if (saves.GetString("main", "2-4") == "1") Core.printl(Localization.RU.notice24);
-            else if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
-            else if (saves.GetString("main", "3-4") == "1") Core.printl(Localization.RU.notice34);
-            else if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
+            if (saves.GetString("main", "2-4") == "1") Core.printl(Localization.RU.notice24);
+            if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
+            if (saves.GetString("main", "3-4") == "1") Core.printl(Localization.RU.notice34);
+            if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
+            if (saves.GetString("main", "1-4") == "1" || saves.GetString("main", "2-4") == "1" || saves.GetString("main", "4-1") == "1" || saves.GetString("main", "3-4") == "1" || saves.GetString("main", "5-4") == "1")
+            {
+
+            }
             else Core.printl(Localization.RU.inventorynone);
 
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Localization.RU.variants); else Core.print(Global.textv); // Вывод отделения между инвентарём и вариантами
@@ -721,10 +765,14 @@ namespace TQuest
             Core.printl("");
 
             if (saves.GetString("main", "1-4") == "1") Core.printl(Localization.RU.notice14);
-            else if (saves.GetString("main", "2-4") == "1") Core.printl(Localization.RU.notice24);
-            else if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
-            else if (saves.GetString("main", "3-4") == "1") Core.printl(Localization.RU.notice34);
-            else if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
+            if (saves.GetString("main", "2-4") == "1") Core.printl(Localization.RU.notice24);
+            if (saves.GetString("main", "4-1") == "1") Core.printl(Localization.RU.notice41);
+            if (saves.GetString("main", "3-4") == "1") Core.printl(Localization.RU.notice34);
+            if (saves.GetString("main", "5-4") == "1") Core.printl(Localization.RU.notice54);
+            if (saves.GetString("main", "1-4") == "1" || saves.GetString("main", "2-4") == "1" || saves.GetString("main", "4-1") == "1" || saves.GetString("main", "3-4") == "1" || saves.GetString("main", "5-4") == "1")
+            {
+
+            }
             else Core.printl(Localization.RU.inventorynone);
 
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Localization.RU.variants); else Core.print(Global.textv); // Вывод отделения между инвентарём и вариантами
