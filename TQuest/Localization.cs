@@ -6,7 +6,7 @@ namespace TQuest
     {
         public class RU // Русский
         {
-            public static string welcomemessage = $"Добро пожаловать в TQuest © 2022 {Environment.NewLine} Оригинальный автор: MineCR {Environment.NewLine} Автор портирования и переписи кода: kolya112";
+            public static string welcomemessage = $"Добро пожаловать в TQuest {Environment.NewLine}";
             public static string inventory = "[Инвентарь: ]";
             public static string variants = "[Варианты: ]";
             public static string room1_description = "Вы находитесь в коридоре. Позади находится дверь на улицу, слева кухня, справа спальня, перед Вами дверь в кабинет и лестницв. У стены стоит тумба с телефоном, на полу грязный коврик."; // Описание первой комнаты
@@ -101,7 +101,7 @@ namespace TQuest
 
         public class EN // English
         {
-            public static string welcomemessage = $"Добро пожаловать в TQuest © 2022 {Environment.NewLine} Оригинальный автор: MineCR {Environment.NewLine} Автор портирования и переписи кода: kolya112";
+            public static string welcomemessage = $"Добро пожаловать в TQuest {Environment.NewLine}";
             public static string inventory = "[Инвентарь: ]";
             public static string variants = "[Варианты: ]";
             public static string room1_description = "Вы находитесь в коридоре. Позади находится дверь на улицу, слева кухня, справа спальня, перед Вами дверь в кабинет и лестницв. У стены стоит тумба с телефоном, на полу грязный коврик."; // Описание первой комнаты
