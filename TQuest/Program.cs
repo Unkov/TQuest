@@ -61,6 +61,8 @@ namespace TQuest
 
         public void Start()
         {
+            var random = new Random();
+            Global.numberKey = random.Next(0, 6);
             bool connection = Internet.CheckConnection();
             if (connection)
             {
@@ -81,7 +83,6 @@ namespace TQuest
             Console.Clear();
             if (Global.oldVersion)
                 RoomOne_1(Localization.RU.oldVersionMessage);
-            Global.numberKey = new Random().Next(1, 5);
             RoomOne_1();
         }
 
@@ -273,6 +274,7 @@ namespace TQuest
             Core.printl("3)" + Localization.RU.room3_action3);
             Core.printl("4)" + Localization.RU.room3_action4);
             Core.printl(Localization.RU.typeneedaction);
+            Core.printl(Global.numberKey.ToString());
             string result = Console.ReadLine();
 
             if (result != null)
@@ -295,7 +297,7 @@ namespace TQuest
                 else if (result == "3)" || result == "3")
                 {
                     if (saves.GetString("main", "key") == "1") RoomThree_3(Localization.RU.searchthis);
-                    string[] passwords = { "06fada21d8639163167030f081af858e0b567dbb2eaec565b2f6ba50fd17ed1d", "6e5d967631bbc0c7d36eefbe398a75323cdd18b2a6e180b95b42add033524cac", "7400bc38db9838278e42498a258f124a1aa2ddaa844bf0a4ba478a709f98c0d1", "61304c99d645456f73c0126dfc69c6de249d52b816078bf2ec66ea0a1322e1aa", "eab5cab790f3bfbb6a5169c6f776aa7ae10637fbd2b61fcc1cc58a501c018728" };
+                    string[] passwords = { "e72c72c6748ea2bb59ebf9d79231abe18e7bd608cf524d0f9e438e542d39e38a", "6e5d967631bbc0c7d36eefbe398a75323cdd18b2a6e180b95b42add033524cac", "7400bc38db9838278e42498a258f124a1aa2ddaa844bf0a4ba478a709f98c0d1", "61304c99d645456f73c0126dfc69c6de249d52b816078bf2ec66ea0a1322e1aa", "eab5cab790f3bfbb6a5169c6f776aa7ae10637fbd2b61fcc1cc58a501c018728" };
                     Console.Clear();
                     Core.printl(Localization.RU.room3_password);
                     string password = Console.ReadLine();
