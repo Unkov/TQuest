@@ -96,7 +96,7 @@ namespace TQuest
             public static string nothingfind = "Вы ничего не нашли";
             public static string searchthis = "Вы уже осмотрели это место";
             public static string inventorynone = "Пусто";
-            public static string oldVersionMessage = "Установлена устаревшая версия, обновите игру на официальном сайте: www.unkov.cf/projects";
+            public static string oldVersionMessage = "Установлена устаревшая версия, обновите игру на официальном сайте: www.unkov.su/projects";
         }
 
         public class EN // English
@@ -191,7 +191,7 @@ namespace TQuest
             public static string nothingfind = "Вы ничего не нашли";
             public static string searchthis = "Вы уже осмотрели это место";
             public static string inventorynone = "Пусто";
-            public static string oldVersionMessage = "Установлена устаревшая версия, обновите игру на официальном сайте: www.unkov.cf/projects";
+            public static string oldVersionMessage = "Установлена устаревшая версия, обновите игру на официальном сайте: www.unkov.su/projects";
         }
     }
 }
