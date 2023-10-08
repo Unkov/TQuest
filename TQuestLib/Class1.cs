@@ -23,7 +23,7 @@ namespace TQuestLib
             Console.WriteLine("      ░   ░  ░░░ ░ ░    ░   ░  ░  ░    ░      ");
             Console.WriteLine("       ░       ░        ░  ░      ░           ");
             Console.WriteLine("                                              ");
-            Console.WriteLine("     Unkov Company | www.unkov.cf | vk.com/unkovcompany");
+            Console.WriteLine("     Unkov Company | www.unkov.su | vk.com/unkovcompany");
         }
 
         public static void print(string text, ConsoleColor color = ConsoleColor.White, ConsoleColor color2 = ConsoleColor.White)

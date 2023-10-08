@@ -13,8 +13,7 @@
 
   <ItemGroup>
     <Reference Include="TQuestLib">
-      <HintPath>bin\Release\net5.0\TQuestLib.dll</HintPath>
-      <Private>True</Private>
+      <HintPath>..\TQuestLib\bin\Release\net5.0\TQuestLib.dll</HintPath>
     </Reference>
   </ItemGroup>
 

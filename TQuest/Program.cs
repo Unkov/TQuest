@@ -68,7 +68,7 @@ namespace TQuest
             {
                 WebClient web = new WebClient();
                 string version = saves.GetString("program", "version");
-                string sVersion = web.DownloadString("https://api.unkov.cf/TQuest/lversion.php");
+                string sVersion = web.DownloadString("https://api.unkov.su/TQuest/lversion.php");
                 if (version != sVersion)
                     Global.oldVersion = true;
             }
@@ -301,7 +301,7 @@ namespace TQuest
                     Console.Clear();
                     Core.printl(Localization.RU.room3_password);
                     string password = Console.ReadLine();
-                    if (password != null)
+                    if (string.IsNullOrEmpty(password))
                     {
                         string hashedpassword = Core.sha256hash(password);
                         string unhashedpassword = passwords[Global.numberKey];
