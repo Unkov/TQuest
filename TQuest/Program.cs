@@ -189,7 +189,7 @@ namespace TQuest
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Global.title); else Core.print(Global.textv); // Вывод самой верхней строки
             Core.printl("");
             Core.printl(Strings.room2_description);
-            for (int i = 0; i < 50; i++) if (i == 25) Core.print(Strings.inventory); else Core.print(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
+            for (int i = 0; i < 49; i++) if (i == 25) Core.print(Strings.inventory); else Core.print(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
             Core.printl("");
 
             if (saves.GetString("main", "1-4") == "1") Core.printl(Strings.notice14);
@@ -261,7 +261,7 @@ namespace TQuest
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Global.title); else Core.print(Global.textv); // Вывод самой верхней строки
             Core.printl("");
             Core.printl(Strings.room3_description);
-            for (int i = 0; i < 50; i++) if (i == 25) Core.print(Strings.inventory); else Core.print(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
+            for (int i = 0; i < 49; i++) if (i == 25) Core.print(Strings.inventory); else Core.print(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
             Core.printl("");
 
             if (saves.GetString("main", "1-4") == "1") Core.printl(Strings.notice14);
@@ -343,7 +343,7 @@ namespace TQuest
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Global.title); else Core.print(Global.textv); // Вывод самой верхней строки
             Core.printl("");
             Core.printl(Strings.room4_description);
-            for (int i = 0; i < 50; i++) if (i == 25) Core.print(Strings.inventory); else Core.print(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
+            for (int i = 0; i < 49; i++) if (i == 25) Core.print(Strings.inventory); else Core.print(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
             Core.printl("");
 
             if (saves.GetString("main", "1-4") == "1") Core.printl(Strings.notice14);
@@ -402,7 +402,7 @@ namespace TQuest
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Global.title); else Core.print(Global.textv); // Вывод самой верхней строки
             Core.printl("");
             Core.printl(Strings.room5_description);
-            for (int i = 0; i < 50; i++) if (i == 25) Core.print(Strings.inventory); else Core.print(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
+            for (int i = 0; i < 49; i++) if (i == 25) Core.print(Strings.inventory); else Core.print(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
             Core.printl("");
 
             if (saves.GetString("main", "1-4") == "1") Core.printl(Strings.notice14);
@@ -472,7 +472,7 @@ namespace TQuest
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Global.title); else Core.print(Global.textv); // Вывод самой верхней строки
             Core.printl("");
             Core.printl(Strings.room6_description);
-            for (int i = 0; i < 50; i++) if (i == 25) Core.print(Strings.inventory); else Core.print(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
+            for (int i = 0; i < 49; i++) if (i == 25) Core.print(Strings.inventory); else Core.print(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
             Core.printl("");
 
             if (saves.GetString("main", "1-4") == "1") Core.printl(Strings.notice14);
@@ -526,7 +526,7 @@ namespace TQuest
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Global.title); else Core.print(Global.textv); // Вывод самой верхней строки
             Core.printl("");
             Core.printl(Strings.room7_description);
-            for (int i = 0; i < 50; i++) if (i == 25) Core.print(Strings.inventory); else Core.print(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
+            for (int i = 0; i < 49; i++) if (i == 25) Core.print(Strings.inventory); else Core.print(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
             Core.printl("");
 
             if (saves.GetString("main", "1-4") == "1") Core.printl(Strings.notice14);
@@ -585,7 +585,7 @@ namespace TQuest
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Global.title); else Core.print(Global.textv); // Вывод самой верхней строки
             Core.printl("");
             Core.printl(Strings.room8_description);
-            for (int i = 0; i < 50; i++) if (i == 25) Core.print(Strings.inventory); else Core.print(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
+            for (int i = 0; i < 49; i++) if (i == 25) Core.print(Strings.inventory); else Core.print(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
             Core.printl("");
 
             if (saves.GetString("main", "1-4") == "1") Core.printl(Strings.notice14);
@@ -630,7 +630,7 @@ namespace TQuest
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Global.title); else Core.print(Global.textv); // Вывод самой верхней строки
             Core.printl("");
             Core.printl(Strings.room9_description);
-            for (int i = 0; i < 50; i++) if (i == 25) Core.print(Strings.inventory); else Core.print(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
+            for (int i = 0; i < 49; i++) if (i == 25) Core.print(Strings.inventory); else Core.print(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
             Core.printl("");
 
             if (saves.GetString("main", "1-4") == "1") Core.printl(Strings.notice14);
@@ -681,7 +681,7 @@ namespace TQuest
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Global.title); else Core.print(Global.textv); // Вывод самой верхней строки
             Core.printl("");
             Core.printl(Strings.room10_description);
-            for (int i = 0; i < 50; i++) if (i == 25) Core.print(Strings.inventory); else Core.print(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
+            for (int i = 0; i < 49; i++) if (i == 25) Core.print(Strings.inventory); else Core.print(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
             Core.printl("");
 
             if (saves.GetString("main", "1-4") == "1") Core.printl(Strings.notice14);
@@ -726,7 +726,7 @@ namespace TQuest
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Global.title); else Core.print(Global.textv); // Вывод самой верхней строки
             Core.printl("");
             Core.printl(Strings.room11_description);
-            for (int i = 0; i < 50; i++) if (i == 25) Core.print(Strings.inventory); else Core.print(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
+            for (int i = 0; i < 49; i++) if (i == 25) Core.print(Strings.inventory); else Core.print(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
             Core.printl("");
 
             if (saves.GetString("main", "1-4") == "1") Core.printl(Strings.notice14);
@@ -779,7 +779,7 @@ namespace TQuest
             for (int i = 0; i < 50; i++) if (i == 25) Core.print(Global.title); else Core.print(Global.textv); // Вывод самой верхней строки
             Core.printl("");
             Core.printl(Strings.room12_description);
-            for (int i = 0; i < 50; i++) if (i == 25) Core.print(Strings.inventory); else Core.print(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
+            for (int i = 0; i < 49; i++) if (i == 25) Core.print(Strings.inventory); else Core.print(Global.textv); // Вывод отделения между описанием комнаты и инвентарём
             Core.printl("");
 
             if (saves.GetString("main", "1-4") == "1") Core.printl(Strings.notice14);
