@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="welcomemessage" xml:space="preserve">
+    <value>Welcome to TQuest 1!
+</value>
+  </data>
+  <data name="inventory" xml:space="preserve">
+    <value>[Inventory: ]</value>
+  </data>
+  <data name="variants" xml:space="preserve">
+    <value>[Options: ]</value>
+  </data>
+  <data name="room1_description" xml:space="preserve">
+    <value>You are in the hallway. Behind you is the door to the street, on the left is the kitchen, on the right is the bedroom, in front of you is the door to the study and the stairs. There's a nightstand with a phone against the wall, and a dirty doormat on the floor.</value>
+  </data>
+  <data name="room1_action1" xml:space="preserve">
+    <value>examine: nightstand with phone</value>
+  </data>
+  <data name="room1_action2" xml:space="preserve">
+    <value>examine: doormat</value>
+  </data>
+  <data name="room1_action3" xml:space="preserve">
+    <value>examine: front door</value>
+  </data>
+  <data name="room1_action4" xml:space="preserve">
+    <value>go: kitchen</value>
+  </data>
+  <data name="room1_action5" xml:space="preserve">
+    <value>go: study</value>
+  </data>
+  <data name="room1_action6" xml:space="preserve">
+    <value>go: bedroom</value>
+  </data>
+  <data name="room1_action7" xml:space="preserve">
+    <value>go: attic</value>
+  </data>
+  <data name="room1_notice14_find" xml:space="preserve">
+    <value>[Doormat] You found a note 1=4</value>
+  </data>
+  <data name="room1_notice14_finded" xml:space="preserve">
+    <value>[Doormat] You have already examined this place</value>
+  </data>
+  <data name="room2_description" xml:space="preserve">
+    <value>You are in the kitchen. There's simple kitchen furnishings here: a table with chairs, a sink, and a kitchen cabinet with various plates, glasses, and jars of cereal. There's a hatch on the floor.</value>
+  </data>
+  <data name="room2_action1" xml:space="preserve">
+    <value>examine: table</value>
+  </data>
+  <data name="room2_action2" xml:space="preserve">
+    <value>examine: kitchen cabinet</value>
+  </data>
+  <data name="room2_action3" xml:space="preserve">
+    <value>examine: sink</value>
+  </data>
+  <data name="room2_action4" xml:space="preserve">
+    <value>go: hallway</value>
+  </data>
+  <data name="room2_action5" xml:space="preserve">
+    <value>go: basement</value>
+  </data>
+  <data name="room2_notice24_find" xml:space="preserve">
+    <value>[Kitchen cabinet] You found a note 2=4</value>
+  </data>
+  <data name="room2_notice24_finded" xml:space="preserve">
+    <value>[Kitchen cabinet] You have already examined this place</value>
+  </data>
+  <data name="room3_description" xml:space="preserve">
+    <value>You are in the study. By the window there's a desk with an armchair, in the corner of the study stands a massive safe with a combination lock. Along the wall there's a bookshelf filled with many books.</value>
+  </data>
+  <data name="room3_action1" xml:space="preserve">
+    <value>examine: bookshelf</value>
+  </data>
+  <data name="room3_action2" xml:space="preserve">
+    <value>examine: desk</value>
+  </data>
+  <data name="room3_action3" xml:space="preserve">
+    <value>examine: safe</value>
+  </data>
+  <data name="room3_action4" xml:space="preserve">
+    <value>go: hallway</value>
+  </data>
+  <data name="room3_notice41_find" xml:space="preserve">
+    <value>[Bookshelf] You found a note 4=1</value>
+  </data>
+  <data name="room3_notice41_finded" xml:space="preserve">
+    <value>[Bookshelf] You have already examined this place</value>
+  </data>
+  <data name="room3_password" xml:space="preserve">
+    <value>[Safe] Enter the safe password using the notes you've found. Hint: there should be 5 notes</value>
+  </data>
+  <data name="room3_wrongpassword" xml:space="preserve">
+    <value>Wrong password, think again</value>
+  </data>
+  <data name="room3_acceptpassword" xml:space="preserve">
+    <value>The safe password turned out to be correct, well done! Here's your key</value>
+  </data>
+  <data name="room4_description" xml:space="preserve">
+    <value>You are in the bedroom. In the middle of the room stands a bed, against the wall there's a wardrobe. You also see a beautiful floor lamp near the bed, filling the room with soft light.</value>
+  </data>
+  <data name="room4_action1" xml:space="preserve">
+    <value>examine: bed</value>
+  </data>
+  <data name="room4_action2" xml:space="preserve">
+    <value>examine: floor lamp</value>
+  </data>
+  <data name="room4_action3" xml:space="preserve">
+    <value>examine: wardrobe</value>
+  </data>
+  <data name="room4_action4" xml:space="preserve">
+    <value>go: hallway</value>
+  </data>
+  <data name="room5_description" xml:space="preserve">
+    <value>You are in the attic. The skylight window is broken. Boxes are lying in the corner, an old bicycle is hanging from the ceiling, and worn-out felt boots are on the floor.</value>
+  </data>
+  <data name="room5_action1" xml:space="preserve">
+    <value>examine: old bicycle</value>
+  </data>
+  <data name="room5_action2" xml:space="preserve">
+    <value>examine: boxes</value>
+  </data>
+  <data name="room5_action3" xml:space="preserve">
+    <value>examine: worn-out felt boots</value>
+  </data>
+  <data name="room5_action4" xml:space="preserve">
+    <value>go: hallway</value>
+  </data>
+  <data name="room5_action5" xml:space="preserve">
+    <value>go: roof</value>
+  </data>
+  <data name="room5_notice34_find" xml:space="preserve">
+    <value>[Worn-out felt boots] You found a note 3=4</value>
+  </data>
+  <data name="room5_notice34_finded" xml:space="preserve">
+    <value>[Worn-out felt boots] You have already examined this place</value>
+  </data>
+  <data name="room6_description" xml:space="preserve">
+    <value>You are on the roof. Be careful, don't fall! In the center rises a brick chimney. And at the very edge, some birds have built a nest.</value>
+  </data>
+  <data name="room6_action1" xml:space="preserve">
+    <value>examine: chimney</value>
+  </data>
+  <data name="room6_action2" xml:space="preserve">
+    <value>examine: nest</value>
+  </data>
+  <data name="room6_action3" xml:space="preserve">
+    <value>go: attic</value>
+  </data>
+  <data name="room7_description" xml:space="preserve">
+    <value>You are in the basement. It's quite damp and dark here, but you can make out a rusty washing machine, a pile of rags in a basket, and also some kind of breach in the wall.</value>
+  </data>
+  <data name="room7_action1" xml:space="preserve">
+    <value>examine: washing machine</value>
+  </data>
+  <data name="room7_action2" xml:space="preserve">
+    <value>examine: pile of clothes</value>
+  </data>
+  <data name="room7_action3" xml:space="preserve">
+    <value>go: kitchen</value>
+  </data>
+  <data name="room7_action4" xml:space="preserve">
+    <value>go: breach</value>
+  </data>
+  <data name="room8_description" xml:space="preserve">
+    <value>The basement is behind you. You are in the breach. It's very cramped here and almost nothing is visible. But ahead, the passage widens enough and you can see a fork.</value>
+  </data>
+  <data name="room8_action1" xml:space="preserve">
+    <value>go: basement</value>
+  </data>
+  <data name="room8_action2" xml:space="preserve">
+    <value>go: fork</value>
+  </data>
+  <data name="room9_description" xml:space="preserve">
+    <value>The cave has expanded sharply. It's much more spacious here. There's a fork in front of you, rustling sounds are coming from the right cave. The left one goes sharply downward and light is visible from below.</value>
+  </data>
+  <data name="room9_action1" xml:space="preserve">
+    <value>go: breach</value>
+  </data>
+  <data name="room9_action2" xml:space="preserve">
+    <value>go: descent down</value>
+  </data>
+  <data name="room9_action3" xml:space="preserve">
+    <value>go: cave</value>
+  </data>
+  <data name="room10_description" xml:space="preserve">
+    <value>The descent down is quite steep, but protruding tree roots help you not to fall. Ahead it's noticeably lighter and you can make out a spacious grotto, the fork is left behind.</value>
+  </data>
+  <data name="room10_action1" xml:space="preserve">
+    <value>go: fork</value>
+  </data>
+  <data name="room10_action2" xml:space="preserve">
+    <value>go: grotto</value>
+  </data>
+  <data name="room11_description" xml:space="preserve">
+    <value>A fire burns in the middle of the grotto. Near it, on a large stone, lies a backpack and a thermos. The coffee in the thermos is still warm. In the far corner, there's a pile of various garbage and junk.</value>
+  </data>
+  <data name="room11_action1" xml:space="preserve">
+    <value>examine: backpack</value>
+  </data>
+  <data name="room11_action2" xml:space="preserve">
+    <value>examine: junk</value>
+  </data>
+  <data name="room11_action3" xml:space="preserve">
+    <value>go: descent down</value>
+  </data>
+  <data name="room12_action1" xml:space="preserve">
+    <value>examine: box</value>
+  </data>
+  <data name="room12_action2" xml:space="preserve">
+    <value>examine: old skull</value>
+  </data>
+  <data name="room12_action3" xml:space="preserve">
+    <value>go: fork</value>
+  </data>
+  <data name="room12_notice54_find" xml:space="preserve">
+    <value>[Box] You found a note 5=4</value>
+  </data>
+  <data name="room12_notice54_finded" xml:space="preserve">
+    <value>[Box] You have already examined this place</value>
+  </data>
+  <data name="gameover" xml:space="preserve">
+    <value>[ The End! ]</value>
+  </data>
+  <data name="gameovertext" xml:space="preserve">
+    <value>That's it, you've completed such a long, and perhaps dangerous, journey. Thank you for playing this game! But this isn't all, someday TQuest 2 will be released!</value>
+  </data>
+  <data name="needkey" xml:space="preserve">
+    <value>You need a key!</value>
+  </data>
+  <data name="typeneedaction" xml:space="preserve">
+    <value>Enter the required action</value>
+  </data>
+  <data name="notice14" xml:space="preserve">
+    <value>Note 1=4</value>
+  </data>
+  <data name="notice24" xml:space="preserve">
+    <value>Note 2=4</value>
+  </data>
+  <data name="notice41" xml:space="preserve">
+    <value>Note 4=1</value>
+  </data>
+  <data name="notice34" xml:space="preserve">
+    <value>Note 3=4</value>
+  </data>
+  <data name="notice54" xml:space="preserve">
+    <value>Note 5=4</value>
+  </data>
+  <data name="choosecorrectvariant" xml:space="preserve">
+    <value>Choose the correct option</value>
+  </data>
+  <data name="nothingfind" xml:space="preserve">
+    <value>You found nothing</value>
+  </data>
+  <data name="searchthis" xml:space="preserve">
+    <value>You have already examined this place</value>
+  </data>
+  <data name="inventorynone" xml:space="preserve">
+    <value>Empty</value>
+  </data>
+  <data name="oldVersionMessage" xml:space="preserve">
+    <value>Outdated version installed, update the game on the official website: unkov.su/projects/tquest1</value>
+  </data>
+  <data name="room12_description" xml:space="preserve">
+    <value>In the darkness, you felt a wall and some kind of recess in it. In this niche, there turned out to be a box. In the corner, you hear wheezing sounds. With your foot, you accidentally kicked a dim skull.</value>
+  </data>
+</root>

@@ -1,0 +1,382 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="welcomemessage" xml:space="preserve">
+    <value>Добро пожаловать в TQuest 1! 
+</value>
+  </data>
+  <data name="inventory" xml:space="preserve">
+    <value>[Инвентарь: ]</value>
+  </data>
+  <data name="variants" xml:space="preserve">
+    <value>[Варианты: ]</value>
+  </data>
+  <data name="room1_description" xml:space="preserve">
+    <value>Вы находитесь в коридоре. Позади находится дверь на улицу, слева кухня, справа спальня, перед Вами дверь в кабинет и лестница. У стены стоит тумба с телефоном, на полу грязный коврик.</value>
+  </data>
+  <data name="room1_action1" xml:space="preserve">
+    <value>осмотреть: тумбочка с телефоном</value>
+  </data>
+  <data name="room1_action2" xml:space="preserve">
+    <value>осмотреть: коврик</value>
+  </data>
+  <data name="room1_action3" xml:space="preserve">
+    <value>осмотреть: входная дверь</value>
+  </data>
+  <data name="room1_action4" xml:space="preserve">
+    <value>идти: кухня</value>
+  </data>
+  <data name="room1_action5" xml:space="preserve">
+    <value>идти: кабинет</value>
+  </data>
+  <data name="room1_action6" xml:space="preserve">
+    <value>идти: спальня</value>
+  </data>
+  <data name="room1_action7" xml:space="preserve">
+    <value>идти: чердак</value>
+  </data>
+  <data name="room1_notice14_find" xml:space="preserve">
+    <value>[Коврик] Вы нашли записку 1=4</value>
+  </data>
+  <data name="room1_notice14_finded" xml:space="preserve">
+    <value>[Коврик] Вы уже осмотрели это место</value>
+  </data>
+  <data name="room2_description" xml:space="preserve">
+    <value>Вы находитесь на кухне. Тут находится нехитрое кухонное убранство: стол со стульями, рукомойник и кухонный шкаф с различными тарелками, стаканами и банками с крупой. На полу люк.</value>
+  </data>
+  <data name="room2_action1" xml:space="preserve">
+    <value>осмотреть: стол</value>
+  </data>
+  <data name="room2_action2" xml:space="preserve">
+    <value>осмотреть: кухонный шкаф</value>
+  </data>
+  <data name="room2_action3" xml:space="preserve">
+    <value>осмотреть: рукомойник</value>
+  </data>
+  <data name="room2_action4" xml:space="preserve">
+    <value>идти: коридор</value>
+  </data>
+  <data name="room2_action5" xml:space="preserve">
+    <value>идти: подвал</value>
+  </data>
+  <data name="room2_notice24_find" xml:space="preserve">
+    <value>[Кухонный шкаф] Вы нашли записку 2=4</value>
+  </data>
+  <data name="room2_notice24_finded" xml:space="preserve">
+    <value>[Кухонный шкаф] Вы уже осмотрели это место</value>
+  </data>
+  <data name="room3_description" xml:space="preserve">
+    <value>Вы находитесь в кабинете. У окна находится стол с креслом, в углу кабинета стоит массивный сейф с кодовым замком. Вдоль стены стоит книжный шкаф, уставленный множеством книг.</value>
+  </data>
+  <data name="room3_action1" xml:space="preserve">
+    <value>осмотреть: книжный шкаф</value>
+  </data>
+  <data name="room3_action2" xml:space="preserve">
+    <value>осмотреть: стол</value>
+  </data>
+  <data name="room3_action3" xml:space="preserve">
+    <value>осмотреть: сейф</value>
+  </data>
+  <data name="room3_action4" xml:space="preserve">
+    <value>идти: коридор</value>
+  </data>
+  <data name="room3_notice41_find" xml:space="preserve">
+    <value>[Книжный шкаф] Вы нашли записку 4=1</value>
+  </data>
+  <data name="room3_notice41_finded" xml:space="preserve">
+    <value>[Книжный шкаф] Вы уже осмотрели это место</value>
+  </data>
+  <data name="room3_password" xml:space="preserve">
+    <value>[Сейф] Введите пароль от сейфа, пользуясь найденными записками. Подсказка: записок должно быть 5</value>
+  </data>
+  <data name="room3_wrongpassword" xml:space="preserve">
+    <value>Неверный пароль, подумай еще раз</value>
+  </data>
+  <data name="room3_acceptpassword" xml:space="preserve">
+    <value>Пароль от сейфа оказался верный, что ж, молодец! Вот твой ключ</value>
+  </data>
+  <data name="room4_description" xml:space="preserve">
+    <value>Вы находитесь в спальне. Посреди комнаты стоит кровать, у стены находится шкаф-купе. Также вы видите возле кровати красивый торшер, наполняющий комнату мягким светом.</value>
+  </data>
+  <data name="room4_action1" xml:space="preserve">
+    <value>осмотреть: кровать</value>
+  </data>
+  <data name="room4_action2" xml:space="preserve">
+    <value>осмотреть: торшер</value>
+  </data>
+  <data name="room4_action3" xml:space="preserve">
+    <value>осмотреть: шкаф-купе</value>
+  </data>
+  <data name="room4_action4" xml:space="preserve">
+    <value>идти: коридор</value>
+  </data>
+  <data name="room5_description" xml:space="preserve">
+    <value>Вы находитесь на чердаке. Окно на крышу выбито. В углу валяются коробки, к потолку подвешен старый велосипед, на полу лежат потрепанные валенки.</value>
+  </data>
+  <data name="room5_action1" xml:space="preserve">
+    <value>осмотреть: старый велосипед</value>
+  </data>
+  <data name="room5_action2" xml:space="preserve">
+    <value>осмотреть: коробки</value>
+  </data>
+  <data name="room5_action3" xml:space="preserve">
+    <value>осмотреть: потрёпанные валенки</value>
+  </data>
+  <data name="room5_action4" xml:space="preserve">
+    <value>идти: коридор</value>
+  </data>
+  <data name="room5_action5" xml:space="preserve">
+    <value>идти: крыша</value>
+  </data>
+  <data name="room5_notice34_find" xml:space="preserve">
+    <value>[Потрёпанные валенки] Вы нашли записку 3=4</value>
+  </data>
+  <data name="room5_notice34_finded" xml:space="preserve">
+    <value>[Потрёпанные валенки] Вы уже осмотрели это место</value>
+  </data>
+  <data name="room6_description" xml:space="preserve">
+    <value>Вы находитесь на крыше. Осторожно, не упадите! В центре возвышается кирпичная труба камина. А у самого края свили гнездо какие-то птицы.</value>
+  </data>
+  <data name="room6_action1" xml:space="preserve">
+    <value>осмотреть: труба камина</value>
+  </data>
+  <data name="room6_action2" xml:space="preserve">
+    <value>осмотреть: гнездо</value>
+  </data>
+  <data name="room6_action3" xml:space="preserve">
+    <value>идти: чердак</value>
+  </data>
+  <data name="room7_description" xml:space="preserve">
+    <value>Вы находитесь в подвале. Тут довольно сыро и темно, но вы разглядели ржавую стиральную машинку, кучу тряпья в корзине, а еще какой-то разлом в стене.</value>
+  </data>
+  <data name="room7_action1" xml:space="preserve">
+    <value>осмотреть: стиралка</value>
+  </data>
+  <data name="room7_action2" xml:space="preserve">
+    <value>осмотреть: куча шмоток</value>
+  </data>
+  <data name="room7_action3" xml:space="preserve">
+    <value>идти: кухня</value>
+  </data>
+  <data name="room7_action4" xml:space="preserve">
+    <value>идти: разлом</value>
+  </data>
+  <data name="room8_description" xml:space="preserve">
+    <value>Позади остался подвал. Вы находитесь в разломе. Тут очень тесно и почти ничего не видно. Но впереди проход достаточно расширяется и видно развилку.</value>
+  </data>
+  <data name="room8_action1" xml:space="preserve">
+    <value>идти: подвал</value>
+  </data>
+  <data name="room8_action2" xml:space="preserve">
+    <value>идти: развилка</value>
+  </data>
+  <data name="room9_description" xml:space="preserve">
+    <value>Пещера резко расширилась. Тут намного свободнее. Перед вами развилка, из правой пещеры слышатся шорохи. Левая же уходит резко вниз и где-то снизу виден свет.</value>
+  </data>
+  <data name="room9_action1" xml:space="preserve">
+    <value>идти: разлом</value>
+  </data>
+  <data name="room9_action2" xml:space="preserve">
+    <value>идти: спуск вниз</value>
+  </data>
+  <data name="room9_action3" xml:space="preserve">
+    <value>идти: пещера</value>
+  </data>
+  <data name="room10_description" xml:space="preserve">
+    <value>Спуск вниз достаточно крутой, но торчащие корни дерева помогают вам не сорваться. Впереди уже заметно светлее и можно разглядеть просторный грот, развилка осталась позади.</value>
+  </data>
+  <data name="room10_action1" xml:space="preserve">
+    <value>идти: развилка</value>
+  </data>
+  <data name="room10_action2" xml:space="preserve">
+    <value>идти: грот</value>
+  </data>
+  <data name="room11_description" xml:space="preserve">
+    <value>Посреди грота горит костер. Возле него, на большом камне лежит рюкзак и термос. В термосе еще теплый кофе. В дальнем углу свалена куча разного мусора и хлама.</value>
+  </data>
+  <data name="room11_action1" xml:space="preserve">
+    <value>осмотреть: рюкзак</value>
+  </data>
+  <data name="room11_action2" xml:space="preserve">
+    <value>осмотреть: хлам</value>
+  </data>
+  <data name="room11_action3" xml:space="preserve">
+    <value>идти: спуск вниз</value>
+  </data>
+  <data name="room12_action1" xml:space="preserve">
+    <value>осмотреть: шкатулка</value>
+  </data>
+  <data name="room12_action2" xml:space="preserve">
+    <value>осмотреть: старый череп</value>
+  </data>
+  <data name="room12_action3" xml:space="preserve">
+    <value>идти: развилка</value>
+  </data>
+  <data name="room12_notice54_find" xml:space="preserve">
+    <value>[Шкатулка] Вы нашли записку 5=4</value>
+  </data>
+  <data name="room12_notice54_finded" xml:space="preserve">
+    <value>[Шкатулка] Вы уже осмотрели это место</value>
+  </data>
+  <data name="gameover" xml:space="preserve">
+    <value>[ Конец! ]</value>
+  </data>
+  <data name="gameovertext" xml:space="preserve">
+    <value>Вот и все, Вы прошли столь долгий, и, возможно, опасный путь. Спасибо, что прошли эту игру! Но это еще не все, когда-нибудь выйдет TQuest 2!</value>
+  </data>
+  <data name="needkey" xml:space="preserve">
+    <value>Вам требуется ключ!</value>
+  </data>
+  <data name="typeneedaction" xml:space="preserve">
+    <value>Введите нужное действие</value>
+  </data>
+  <data name="notice14" xml:space="preserve">
+    <value>Записка 1=4</value>
+  </data>
+  <data name="notice24" xml:space="preserve">
+    <value>Записка 2=4</value>
+  </data>
+  <data name="notice41" xml:space="preserve">
+    <value>Записка 4=1</value>
+  </data>
+  <data name="notice34" xml:space="preserve">
+    <value>Записка 3=4</value>
+  </data>
+  <data name="notice54" xml:space="preserve">
+    <value>Записка 5=4</value>
+  </data>
+  <data name="choosecorrectvariant" xml:space="preserve">
+    <value>Выберите корректный вариант</value>
+  </data>
+  <data name="nothingfind" xml:space="preserve">
+    <value>Вы ничего не нашли</value>
+  </data>
+  <data name="searchthis" xml:space="preserve">
+    <value>Вы уже осмотрели это место</value>
+  </data>
+  <data name="inventorynone" xml:space="preserve">
+    <value>Пусто</value>
+  </data>
+  <data name="oldVersionMessage" xml:space="preserve">
+    <value>Установлена устаревшая версия, обновите игру на официальном сайте: unkov.su/projects/tquest1</value>
+  </data>
+  <data name="room12_description" xml:space="preserve">
+    <value>В темноте вы нащупали стену и какое-то углубление в ней. В этой нише оказалась шкатулка. В углу слышны похрипывания. Ногой вы случайно толкнули тусклый череп.</value>
+  </data>
+</root>

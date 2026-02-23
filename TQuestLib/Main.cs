@@ -2,30 +2,39 @@
 using System.Security.Cryptography;
 using System.Text;
 using System.Threading;
-using System.IO;
-using System.Net;
-using System.Net.NetworkInformation;
 using System.Runtime.InteropServices;
+using System.Net.Http;
+using System.Threading.Tasks;
 
 namespace TQuestLib
 {
     public class Core
     {
-        public static void intro() // Текст в начале игры
+        /// <summary>
+        /// Logo at the beginning of the game
+        /// </summary>
+        public static void intro()
         {
-            Console.WriteLine("     █████   █    ██ ▓█████   ██████ ▄▄▄█████▓");
-            Console.WriteLine("   ▒██▓  ██▒ ██  ▓██▒▓█   ▀ ▒██    ▒ ▓  ██▒ ▓▒");
-            Console.WriteLine("   ▒██▒  ██░▓██  ▒██░▒███   ░ ▓██▄   ▒ ▓██░ ▒░");
-            Console.WriteLine("   ░██  █▀ ░▓▓█  ░██░▒▓█  ▄   ▒   ██▒░ ▓██▓ ░ ");
-            Console.WriteLine("   ░▒███▒█▄ ▒▒█████▓ ░▒████▒▒██████▒▒  ▒██▒ ░ ");
-            Console.WriteLine("   ░░ ▒▒░ ▒ ░▒▓▒ ▒ ▒ ░░ ▒░ ░▒ ▒▓▒ ▒ ░  ▒ ░░   ");
-            Console.WriteLine("    ░ ▒░  ░ ░░▒░ ░ ░  ░ ░  ░░ ░▒  ░ ░    ░    ");
-            Console.WriteLine("      ░   ░  ░░░ ░ ░    ░   ░  ░  ░    ░      ");
-            Console.WriteLine("       ░       ░        ░  ░      ░           ");
+            Console.WriteLine("▄▄▄█████▓ █████   █    ██ ▓█████   ██████ ▄▄▄█████▓    ██▒   ");
+            Console.WriteLine("▓  ██▒ ▓▒▒██▓  ██▒ ██  ▓██▒▓█   ▀ ▒██    ▒ ▓  ██▒ ▓▒  ▓███▒   ");
+            Console.WriteLine("▒ ▓██░ ▒░▒██▒  ██░▓██  ▒██░▒███   ░ ▓██▄   ▒ ▓██░ ▒░  ░▒██▒   ");
+            Console.WriteLine("░ ▓██▓ ░ ░██  █▀ ░▓▓█  ░██░▒▓█  ▄   ▒   ██▒░ ▓██▓ ░    ░██░   ");
+            Console.WriteLine("  ▒██▒ ░ ░▒███▒█▄ ▒▒█████▓ ░▒████▒▒██████▒▒  ▒██▒ ░    ░██░   ");
+            Console.WriteLine("  ▒ ░░   ░░ ▒▒░ ▒ ░▒▓▒ ▒ ▒ ░░ ▒░ ░▒ ▒▓▒ ▒ ░  ▒ ░░      ░▓     ");
+            Console.WriteLine("    ░     ░ ▒░  ░ ░░▒░ ░ ░  ░ ░  ░░ ░▒  ░ ░    ░       ▒ ░   ");
+            Console.WriteLine("  ░         ░   ░  ░░░ ░ ░    ░   ░  ░  ░    ░         ░     ");
+            Console.WriteLine("          ░       ░        ░  ░      ░                 ");
             Console.WriteLine("                                              ");
             Console.WriteLine("     Unkov Company | unkov.su | vk.com/unkovcompany");
+            Console.WriteLine("              unkov.su/projects/tquest1");
         }
 
+        /// <summary>
+        /// Print formatting text
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="color"></param>
+        /// <param name="color2"></param>
         public static void print(string text, ConsoleColor color = ConsoleColor.White, ConsoleColor color2 = ConsoleColor.White)
         {
             Console.ForegroundColor = color;
@@ -33,6 +42,12 @@ namespace TQuestLib
             Console.ForegroundColor = color2;
         }
 
+        /// <summary>
+        /// Print formatting text and new line
+        /// </summary>
+        /// <param name="text"></param>
+        /// <param name="color"></param>
+        /// <param name="color2"></param>
         public static void printl(string text, ConsoleColor color = ConsoleColor.White, ConsoleColor color2 = ConsoleColor.White)
         {
             Console.ForegroundColor = color;
@@ -40,7 +55,12 @@ namespace TQuestLib
             Console.ForegroundColor = color2;
         }
 
-        public static string sha256hash(string text) // Шифрование ключа сейфа
+        /// <summary>
+        /// Encrypt code of safe
+        /// </summary>
+        /// <param name="text"></param>
+        /// <returns></returns>
+        public static string sha256hash(string text)
         {
             StringBuilder oResHash = new StringBuilder();
 
@@ -56,107 +76,74 @@ namespace TQuestLib
             return oResHash.ToString();
         }
 
-        public static void MissionImpossible() // Музыка в начале игры
+
+        /// <summary>
+        /// Music at the beginning of the game
+        /// </summary>
+        public static void MissionImpossible()
         {
-            Console.Beep(784, 150);
-            Thread.Sleep(300);
-            Console.Beep(784, 150);
-            Thread.Sleep(300);
-            Console.Beep(932, 150);
-            Thread.Sleep(150);
-            Console.Beep(1047, 150);
-            Thread.Sleep(150);
-            Console.Beep(784, 150);
-            Thread.Sleep(300);
-            Console.Beep(784, 150);
-            Thread.Sleep(300);
-            Console.Beep(699, 150);
-            Thread.Sleep(150);
-            Console.Beep(740, 150);
-            Thread.Sleep(150);
-            Console.Beep(784, 150);
-            Thread.Sleep(300);
-            Console.Beep(784, 150);
-            Thread.Sleep(300);
-            Console.Beep(932, 150);
-            Thread.Sleep(150);
-            Console.Beep(1047, 150);
-            Thread.Sleep(150);
-            Console.Beep(784, 150);
-            Thread.Sleep(300);
-            Console.Beep(784, 150);
-            Thread.Sleep(300);
-            Console.Beep(699, 150);
+            if (RuntimeInformation.IsOSPlatform(OSPlatform.Windows))
+            {
+                Console.Beep(784, 150);
+                Thread.Sleep(300);
+                Console.Beep(784, 150);
+                Thread.Sleep(300);
+                Console.Beep(932, 150);
+                Thread.Sleep(150);
+                Console.Beep(1047, 150);
+                Thread.Sleep(150);
+                Console.Beep(784, 150);
+                Thread.Sleep(300);
+                Console.Beep(784, 150);
+                Thread.Sleep(300);
+                Console.Beep(699, 150);
+                Thread.Sleep(150);
+                Console.Beep(740, 150);
+                Thread.Sleep(150);
+                Console.Beep(784, 150);
+                Thread.Sleep(300);
+                Console.Beep(784, 150);
+                Thread.Sleep(300);
+                Console.Beep(932, 150);
+                Thread.Sleep(150);
+                Console.Beep(1047, 150);
+                Thread.Sleep(150);
+                Console.Beep(784, 150);
+                Thread.Sleep(300);
+                Console.Beep(784, 150);
+                Thread.Sleep(300);
+                Console.Beep(699, 150);
+            }
+            else
+            {
+                Console.Beep();
+                Thread.Sleep(9000);
+            }
         }
     }
 
     public static class Internet
     {
-        [DllImport("wininet.dll")]
-        static extern bool InternetGetConnectedState(ref InternetConnectionState lpdwFlags, int dwReserved);
-
-        [Flags]
-        enum InternetConnectionState : int
-        {
-            INTERNET_CONNECTION_MODEM = 0x1,
-            INTERNET_CONNECTION_LAN = 0x2,
-            INTERNET_CONNECTION_PROXY = 0x4,
-            INTERNET_RAS_INSTALLED = 0x10,
-            INTERNET_CONNECTION_OFFLINE = 0x20,
-            INTERNET_CONNECTION_CONFIGURED = 0x40
-        }
-
-        static object _syncObj = new object();
-
         /// <summary>
-        /// Проверить, есть ли соединение с интернетом
+        /// Check the Internet connection available
         /// </summary>
         /// <returns></returns>
-        public static Boolean CheckConnection()
+        public static async Task<bool> CheckConnection()
         {
-            lock (_syncObj)
+            var checkConnectionRequest = new HttpRequestMessage(HttpMethod.Head, new Uri("http://connectivitycheck.gstatic.com/generate_204"));
+            using var hClient = new HttpClient();
+            hClient.Timeout = TimeSpan.FromSeconds(5);
+            try
             {
-                try
-                {
-                    InternetConnectionState flags = InternetConnectionState.INTERNET_CONNECTION_CONFIGURED | 0;
-                    bool checkStatus = InternetGetConnectedState(ref flags, 0);
+                using var hResponse = await hClient.SendAsync(checkConnectionRequest);
 
-                    if (checkStatus)
-                        return PingServer(new string[]
-                                            {
-                                                @"google.com",
-                                                @"microsoft.com",
-                                                @"ibm.com"
-                                            });
-
-                    return checkStatus;
-                }
-                catch
-                {
-                    return false;
-                }
+                return hResponse.IsSuccessStatusCode;
             }
-        }
-
-
-        /// <summary>
-        /// Пингует сервера, при первом получении ответа от любого сервера возвращает true 
-        /// </summary>
-        /// <param name="serverList">Список серверов</param>
-        /// <returns></returns>
-        public static bool PingServer(string[] serverList)
-        {
-            bool haveAnInternetConnection = false;
-            Ping ping = new Ping();
-            for (int i = 0; i < serverList.Length; i++)
+            catch
             {
-                PingReply pingReply = ping.Send(serverList[i]);
-                haveAnInternetConnection = (pingReply.Status == IPStatus.Success);
-                if (haveAnInternetConnection)
-                    break;
+                return false;
             }
 
-            return haveAnInternetConnection;
         }
     }
 }
