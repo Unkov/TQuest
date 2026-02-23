@@ -23,7 +23,7 @@ namespace TQuestLib
             Console.WriteLine("      ░   ░  ░░░ ░ ░    ░   ░  ░  ░    ░      ");
             Console.WriteLine("       ░       ░        ░  ░      ░           ");
             Console.WriteLine("                                              ");
-            Console.WriteLine("     Unkov Company | www.unkov.su | vk.com/unkovcompany");
+            Console.WriteLine("     Unkov Company | unkov.su | vk.com/unkovcompany");
         }
 
         public static void print(string text, ConsoleColor color = ConsoleColor.White, ConsoleColor color2 = ConsoleColor.White)
@@ -44,7 +44,7 @@ namespace TQuestLib
         {
             StringBuilder oResHash = new StringBuilder();
 
-            using (SHA256 oHash = SHA256Managed.Create())
+            using (SHA256 oHash = SHA256.Create())
             {
                 Encoding oEnc = Encoding.UTF8;
                 byte[] baResult = oHash.ComputeHash(oEnc.GetBytes(text));

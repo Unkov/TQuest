@@ -9,56 +9,25 @@ namespace TQuest
 {
     internal class Program
     {
-        static bool exitSystem = false;
-        
-        #region Trap application termination
-        [DllImport("Kernel32")]
-        private static extern bool SetConsoleCtrlHandler(EventHandler handler, bool add);
+        internal static HubManager saves = new HubManager(Global.spath);
 
-        private delegate bool EventHandler(CtrlType sig);
-        static EventHandler _handler;
-
-        enum CtrlType
-        {
-            CTRL_C_EVENT = 0,
-            CTRL_BREAK_EVENT = 1,
-            CTRL_CLOSE_EVENT = 2,
-            CTRL_LOGOFF_EVENT = 5,
-            CTRL_SHUTDOWN_EVENT = 6
-        }
-        public static HubManager saves = new HubManager(Global.spath);
-
-        private static bool Handler(CtrlType sig)
+        private static void ExitHandler(object sender, EventArgs e)
         {
             saves.WriteString("main", "1-4", "0");
             saves.WriteString("main", "2-4", "0");
             saves.WriteString("main", "4-1", "0");
             saves.WriteString("main", "3-4", "0");
             saves.WriteString("main", "5-4", "0");
-
-            //allow main to run off
-            exitSystem = true;
-
-            //shutdown right away so there are no lingering threads
-            Environment.Exit(-1);
-
-            return true;
         }
-        #endregion
 
         static void Main(string[] args)
         {
-            _handler += new EventHandler(Handler);
-            SetConsoleCtrlHandler(_handler, true);
+            AppDomain.CurrentDomain.ProcessExit += new System.EventHandler(ExitHandler);
             Program p = new Program();
             p.Start();
-
-            while (!exitSystem)
-            {
-                Thread.Sleep(500);
-            }
         }
 
+        // Game Start Point
         public void Start()
         {
             var random = new Random();
