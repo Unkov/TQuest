@@ -1,12 +1,15 @@
-﻿using System;
+﻿using INIManager;
+using System;
+using System.Diagnostics;
 using System.Globalization;
+using System.IO;
 using System.Linq;
 using System.Net.Http;
+using System.Reflection;
 using System.Threading;
 using System.Threading.Tasks;
-using INIManager;
-using TQuestLib;
 using TQuest.Locales;
+using TQuestLib;
 
 namespace TQuest
 {
@@ -25,15 +28,47 @@ namespace TQuest
 
         static async Task Main(string[] args)
         {
-            AppDomain.CurrentDomain.ProcessExit += new EventHandler(ExitHandler);
-
-            var currentCulture = CultureInfo.CurrentUICulture;
-            string[] cisLangs = { "be", "kk", "ky", "tg", "uz", "hy", "az" };
-            if (cisLangs.Any(lang => currentCulture.Name.StartsWith(lang)))
+            try
             {
-                CultureInfo.DefaultThreadCurrentUICulture = new CultureInfo("ru");
+                if (!File.Exists(Global.spath) || (args.Length == 1 && args[0] == "--config-reset"))
+                {
+                    Directory.CreateDirectory(Path.GetDirectoryName(Global.spath));
+                    await File.WriteAllTextAsync(Global.spath, $"[main]{Environment.NewLine}1-4=0{Environment.NewLine}2-4=0{Environment.NewLine}4-1=0{Environment.NewLine}3-4=0{Environment.NewLine}5-4=0{Environment.NewLine}key=0{Environment.NewLine}");
+                }
+
+            }
+            catch (Exception ex)
+            {
+                Core.printl("[FATAL ERROR] The program failed to write the configuration file. Please make screenshot and contact the developers via email: support@unkov.su | Программе не удалось записать файл конфигурации. Пожалуйста, сделайте скриншот и свяжитесь с разработчиками по электронной почте: support@unkov.su", ConsoleColor.Red);
+                Core.printl($"Exception message: {ex.Message} | Source: {ex.Source} | StackTrace: {ex.StackTrace}");
+                Core.printl("Press any key to exit.....");
+                Console.ReadKey();
+                Environment.Exit(1);
             }
 
+            // Internet connection and update available check
+            bool isInternetConnected = await Internet.CheckConnection();
+            if (isInternetConnected)
+            {
+                using var hClient = new HttpClient();
+                var gameBinaryVersion = FileVersionInfo.GetVersionInfo(Assembly.GetExecutingAssembly().Location);
+                string version = gameBinaryVersion.FileVersion;
+                using var hRequestServerVersion = await hClient.GetAsync(new Uri("https://api.unkov.su/TQuest/lversion.php"));
+                string sVersion = await hRequestServerVersion.Content.ReadAsStringAsync();
+                if (version != sVersion)
+                    Global.oldVersion = true;
+            }
+
+            // Exit Handler
+            AppDomain.CurrentDomain.ProcessExit += new EventHandler(ExitHandler);
+
+            // Localization settings for CIS community
+            var currentCulture = CultureInfo.CurrentUICulture;
+            string[] cisLangs = { "be", "kk", "ky", "tg", "uz", "hy", "az", "uk" };
+            if (cisLangs.Any(lang => currentCulture.Name.StartsWith(lang)))
+                CultureInfo.DefaultThreadCurrentUICulture = new CultureInfo("ru");
+
+            // Game Start
             Program p = new Program();
             await p.Start();
         }
@@ -43,16 +78,6 @@ namespace TQuest
         {
             var random = new Random();
             Global.numberKey = random.Next(0, 6);
-            bool isInternetConnected = await Internet.CheckConnection();
-            if (isInternetConnected)
-            {
-                using var hClient = new HttpClient();
-                string version = saves.GetString("program", "version");
-                using var hRequestServerVersion = await hClient.GetAsync(new Uri("https://api.unkov.su/TQuest/lversion.php"));
-                string sVersion = await hRequestServerVersion.Content.ReadAsStringAsync();
-                if (version != sVersion)
-                    Global.oldVersion = true;
-            }
             
             Console.Title = "TQuest 1";
             Core.printl(Strings.welcomemessage, ConsoleColor.Red);
